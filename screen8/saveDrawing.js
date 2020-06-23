@@ -52,6 +52,10 @@ function saveDrawing() {
   if (screen == 1) {
     data = {
       tijd: tijd,
+      camX:camX,
+      camY:camY,
+      H:H,
+      W:W
     }
     result.update(data);
   }
