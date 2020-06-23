@@ -33,14 +33,14 @@ function setup() {
   
   //configuratie firebase
   var firebaseConfig = {
-    apiKey: "AIzaSyBuSrd3nrPORN9Cp7nZkwdOjpJSg4NSRYQ",
-    authDomain: "coronastory-221fe.firebaseapp.com",
-    databaseURL: "https://coronastory-221fe.firebaseio.com",
-    projectId: "coronastory-221fe",
-    storageBucket: "coronastory-221fe.appspot.com",
-    messagingSenderId: "607660227033",
-    appId: "1:607660227033:web:f7fcad94b27d57276701c8",
-    measurementId: "G-79697JM9Q6"
+    apiKey: "AIzaSyBW9WCsKKn-9fVMYQkC0Rt27HKu0RLnvso",
+    authDomain: "blokstruggles.firebaseapp.com",
+    databaseURL: "https://blokstruggles.firebaseio.com",
+    projectId: "blokstruggles",
+    storageBucket: "blokstruggles.appspot.com",
+    messagingSenderId: "355830274814",
+    appId: "1:355830274814:web:eeef9f1fb53c24e13ae3af",
+    measurementId: "G-D0JPRQM09N"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -63,45 +63,49 @@ function draw() {
     saveDrawing();
   }
   
-  if(screen>0){
+  if(screen>0&&screen<10){
   image(volgendeReactie,volgende.position().x,volgende.position().y,volgende.size().width,volgende.size().height);
 
-  if(screen>2 && screen<8){
+  if(screen>3 && screen<9){
   fill(color(168, 193, 227));
   noStroke();
   rect(camX-inbetween/2,camY-inbetween/2,camW+inbetween,camH+inbetween);
   }
   }
-  
-  if (screen==2){
-    typologiekeuze();
+  if(screen==3){
+    tekenAntwoord2b();
   }
   
-  if(screen==3){
+  if(screen==4){
     drawPhoto();
     tekenAntwoord3();
   }
-  if(screen==4){
+  if(screen==5){
     drawPhoto();
     tekenAntwoord4();
   }
   
-    if(screen==5){
+    if(screen==6){
     drawPhoto();
     tekenAntwoord5();
   }
   
-    if(screen==6){
+    if(screen==7){
     drawPhoto();
     tekenAntwoord6();
   }
   
-  if(screen==7){
+  if(screen==8){
     drawPhoto();
     tekenAntwoord7();
   }
   
-  if(screen==8){
+  if(screen==9){
     fotoreeks();
   }
+}
+
+// prevents the mobile browser from processing  scrolling the page.
+function touchMoved(){
+    return false;
 }

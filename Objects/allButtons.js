@@ -10,20 +10,43 @@ function allButtons(){
   volgende = createImg('images/Volgende.png', 'Next');
   volgende.size(2.7 * buttonSize, buttonSize);
   volgende.position(W-2.7*buttonSize-inbetween,H-inbetween-buttonSize);
-  volgende.touchStarted(volgendeScherm);
-  volgende.touchEnded(volgendeSchermEinde);
+  volgende.mousePressed(volgendeScherm);
+  volgende.mouseReleased(volgendeSchermEinde);
 
   // De inleidende tekst op de eerste pagina
   informedConsent();
   
   // De elementen die op scherm twee staan
-  huisButtons();
+  algemeneVragen();
   hideScreen2();
   
-  logoklein=createImg('images/Logo2.png','kleinlogo');
-  logoklein.size(buttonSize,buttonSize);
-  logoklein.position(inbetween,inbetween);
-  logoklein.hide();
+  veranderingVragen();
+  hideScreen2b();
+  
+  logoRuimte=createImg('images/Ruimte.png','kleinlogo');
+  logoRuimte.size(buttonSize*3.5/2,buttonSize/2);
+  logoRuimte.position(inbetween+buttonSize/4,inbetween+buttonSize/8);
+  logoRuimte.hide();
+  
+  logoPrivacy=createImg('images/Privacy.png','kleinlogo');
+  logoPrivacy.size(buttonSize*3.5/2,buttonSize/2);
+  logoPrivacy.position(inbetween+buttonSize/4,inbetween+buttonSize/8);
+  logoPrivacy.hide();
+  
+  logoUitzicht=createImg('images/Uitzicht.png','kleinlogo');
+  logoUitzicht.size(buttonSize*3.5/2,buttonSize/2);
+  logoUitzicht.position(inbetween+buttonSize/4,inbetween+buttonSize/8);
+  logoUitzicht.hide();
+  
+  logoLicht=createImg('images/Licht.png','kleinlogo');
+  logoLicht.size(buttonSize*3.5/2,buttonSize/2);
+  logoLicht.position(inbetween+buttonSize/4,inbetween+buttonSize/8);
+  logoLicht.hide();
+  
+  logoGeluid=createImg('images/Geluid.png','kleinlogo');
+  logoGeluid.size(buttonSize*3.5/2,buttonSize/2);
+  logoGeluid.position(inbetween+buttonSize/4,inbetween+buttonSize/8);
+  logoGeluid.hide();
   
   camButtons();
   tekstvakScreen3();

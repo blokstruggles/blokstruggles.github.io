@@ -1,7 +1,7 @@
 function informedConsent(){
-   IC=createElement('textarea').size(camW, camH).position(camX,camY).style('background-color', color(0, 0, 0, 0)).style('font-size', fontsize);
+   IC=createElement('textarea').size(camW, H-5*inbetween-2*buttonSize).position(camX,camY+buttonSize/2+inbetween).style('background-color', color(0, 0, 0, 0)).style('font-size', fontsize);
   
-  IC.value("Studenten! Laat weten wat er tijdens het blokken (niet) gaat!"+"\r\n "+"\r\nDoor de Coronacrisis hebben wij (de studenten) ons allemaal moeten aanpassen."+"\r\n"+"\r\nMet deze online applicatie kan je door middel van foto's en bijkomende vertellen wat er op jouw nieuwe studeerplek (niet) mis gaat. Hierbij kan je vooral focussen op wat er anders verloopt door de coronacrisis, zowel positieve als negatieve elementen komen aan bod."+"\r\n"+"\r\nDruk op 'Volgende' om naar de volgende stap te gaan, verdere stappen worden later uitgelegd.");
+  IC.value("Beste studenten, \r\n\r\nDoor de Coronacrisis hebben we ons allemaal moeten aanpassen aan de nieuwe ongeziene situatie. Dit liet zich ook voelen in onze studieruimte en dat heeft rechtstreeks invloed op onze blokervaring. Zo is het niet meer mogelijk om naar de bib te gaan en ziet het leven thuis of op kot er niet meer hetzelfde uit."+"\r\n"+"\r\nIk ben een student ingenieur-architect en in het kader van mijn thesis probeer ik de impact van deze nieuwe studieruimte op de studie in kaart te brengen. Hierbij horen zowel frustraties als eventuele aanpassingen die studenten maken om beter te kunnen studeren. Deze data zal anoniem verzameld en gebundeld worden in een online database, waardoor jullie de kans krijgen om ervaringen en tips van medestudenten te lezen."+"\r\n"+"\r\nVia deze online app kan je in 15 minuten laten weten hoe jij je nieuwe studieplek ervaart aan de hand van foto's en bijkomende vragen.\r\n\r\nAlvast bedankt voor je tijd!");
   
   IC.attribute('disabled','true');
 }
