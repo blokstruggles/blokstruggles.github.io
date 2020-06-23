@@ -54,8 +54,13 @@ function saveDrawing() {
       tijd: tijd,
       camX:camX,
       camY:camY,
+      camW:camW,
+      camH:camH,
       H:H,
-      W:W
+      W:W,
+      buttonSize:buttonSize,
+      teksthoogte:teksthoogte,
+      inbetween:inbetween
     }
     result.update(data);
   }
