@@ -50,6 +50,5 @@ function volgendeSchermEinde(){
   if(screen==10){
     hideScreen8();
     volgende.hide();
-    logoklein.hide();
   }
 }

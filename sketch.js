@@ -12,7 +12,7 @@ function preload(){
     audio: false,
     video: {
       facingMode: {
-        exact: "environment"
+        exact: "user"
         // indien front gewenst "user"
         // achtercamera "environment"
       }
@@ -65,6 +65,10 @@ function draw() {
   
   if(screen>0&&screen<10){
   image(volgendeReactie,volgende.position().x,volgende.position().y,volgende.size().width,volgende.size().height);
+    color(0,0,0);
+    fill(0,0,0);
+    noStroke();
+    text("stap "+screen+"/9",camX,H-inbetween-buttonSize/2)
 
   if(screen>3 && screen<9){
   fill(color(168, 193, 227));
