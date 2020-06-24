@@ -13,7 +13,7 @@ function preload(){
     video: {
       facingMode: {
         exact: "environment"
-        // indien front gewenst "user"
+        // indien front gewenst "environment"
         // achtercamera "environment"
       }
     }

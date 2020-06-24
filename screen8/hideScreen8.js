@@ -117,16 +117,16 @@ function showScreen8() {
   screen6Antwoord.show();
   screen7Antwoord.show();
 
-  if(screen7Antwoord.value()=="Andere:"){
+  if(screen3Antwoord.value()=="Andere:"){
   screen3AntwoordAndere.show();
   }
-  if(screen7Antwoord.value()=="Andere:"){
+  if(screen4Antwoord.value()=="Andere:"){
   screen4AntwoordAndere.show();
     }
-  if(screen7Antwoord.value()=="Andere:"){
+  if(screen5Antwoord.value()=="Andere:"){
   screen5AntwoordAndere.show();
     }
-  if(screen7Antwoord.value()=="Andere:"){
+  if(screen6Antwoord.value()=="Andere:"){
   screen6AntwoordAndere.show();
     }
   if(screen7Antwoord.value()=="Andere:"){
