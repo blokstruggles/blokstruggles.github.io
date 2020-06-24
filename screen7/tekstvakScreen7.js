@@ -20,7 +20,7 @@ function tekstvakScreen7(){
   
   screen7=createElement('text','Neem een foto van een geluidsbron die je het meeste stoort of van de plek waar de geluidsbron voorkomt.').size(camW, buttonSize).position(camX,2*inbetween+buttonSize).style('font-size', fontsize);
     
-  screen7Vraag=createElement('text',"In welke ruimte zit je?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+inbetween).style('font-size', fontsize);
+  screen7Vraag=createElement('text',"Welk geluid stoort je het meest?").size(camW/2-2*inbetween, buttonSize/3).position(inbetween,camY+camH+inbetween).style('font-size', fontsize);
   
   screen7Antwoord=createSelect().position(W/2,camY+camH+inbetween).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
   screen7Antwoord.option('De straat');
