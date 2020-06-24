@@ -12,7 +12,7 @@ function preload(){
     audio: false,
     video: {
       facingMode: {
-        exact: "environment"
+        exact: "user"
         // indien front gewenst "user"
         // achtercamera "environment"
       }
@@ -78,6 +78,9 @@ function draw() {
   }
   if(screen==3){
     tekenAntwoord2b();
+    noStroke();
+    fill(color(0,0,0));
+    text("Waarom je wel of niet tevreden bent met de ruimte kan je uitleggen aan de hand van 5 thema's tijdens de volgende stappen. De studieplek in het algemeen, de privacy, de afleiding door het uitzicht, het licht en het storende geluid. Je bent niet verplicht om een foto te nemen en kan een thema overslaan door op de knop 'volgende' te drukken.",inbetween,camY + buttonSize / 2 + 12 * inbetween + 9* teksthoogte + 2*buttonSize * 2 / 3 + buttonSize,W-2*inbetween,H);
   }
   
   if(screen==4){

@@ -34,6 +34,7 @@ function hideScreen8() {
   screen6Antwoord.hide();
   screen7Antwoord.hide();
 
+  
   screen3AntwoordAndere.hide();
   screen4AntwoordAndere.hide();
   screen5AntwoordAndere.hide();
@@ -116,11 +117,21 @@ function showScreen8() {
   screen6Antwoord.show();
   screen7Antwoord.show();
 
+  if(screen7Antwoord.value()=="Andere:"){
   screen3AntwoordAndere.show();
+  }
+  if(screen7Antwoord.value()=="Andere:"){
   screen4AntwoordAndere.show();
+    }
+  if(screen7Antwoord.value()=="Andere:"){
   screen5AntwoordAndere.show();
+    }
+  if(screen7Antwoord.value()=="Andere:"){
   screen6AntwoordAndere.show();
+    }
+  if(screen7Antwoord.value()=="Andere:"){
   screen7AntwoordAndere.show();
+  }
 
   if (screen4VY <= camY + camH) {
     screen4V.show();

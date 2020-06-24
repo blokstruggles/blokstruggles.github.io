@@ -68,8 +68,8 @@ function saveDrawing() {
   if (screen == 2) {
     algemeneInfo[0]=geslachtInput.value();
     algemeneInfo[1]=leeftijdInput.value();
-    algemeneInfo[2]=universiteitInput.value();
-    algemeneInfo[3]=faculteitInput.value();
+    algemeneInfo[2]=universiteitInput.value()+universiteitAndere.value();
+    algemeneInfo[3]=faculteitInput.value()+faculteitAndere.value();
     
     data = {
       tijd: tijd,

@@ -52,7 +52,7 @@ function veranderingVragen() {
   angry.mousePressed(angryPress);
 
 
-  vorigeplekWaarom = createElement('vorigeplekvraag', 'Waarom zat je vroeger op deze locatie?').style('font-size', fontsize);
+  vorigeplekWaarom = createElement('vorigeplekvraag', 'Waarom zat je bij vorige examenperiodes op deze locatie?').style('font-size', fontsize);
   vorigeplekWaarom.position(inbetween, camY + buttonSize / 2 + 5 * inbetween + 3 * teksthoogte + buttonSize * 2 / 3);
 
   vorigeplekWaaromInput = createElement('textarea').size(camW, buttonSize).position(3 * inbetween, camY + buttonSize / 2 + 5.5 * inbetween + 4 * teksthoogte + buttonSize * 2 / 3).style('background-color', color(255, 255, 255, 100)).style('font-size', fontsize).value("");

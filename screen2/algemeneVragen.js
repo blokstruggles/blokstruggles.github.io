@@ -23,7 +23,9 @@ function algemeneVragen() {
   universiteitInput = createSelect().style('font-size', fontsize);
   universiteitInput.position(3*inbetween, camY + buttonSize/2+ 5.5 * inbetween + 5*teksthoogte);
   universiteitInput.option('kies een optie');
-  universiteitInput.size(camW);
+  universiteitInput.size(camW*2/3);
+  
+  universiteitAndere=createInput("").position(4*inbetween+camW*2/3,camY + buttonSize/2+ 5.5 * inbetween + 5*teksthoogte).size(camW/3);
 
   universiteitInput.option('Artesis plantijn');
   universiteitInput.option('Arteveldehogeschool');
@@ -42,6 +44,7 @@ function algemeneVragen() {
   universiteitInput.option('UHasselt');
   universiteitInput.option('Vives');
   universiteitInput.option('VUB');
+  universiteitInput.option('Andere:');
 
   universiteitInput.changed(faculteitkeuze);
 
@@ -51,18 +54,25 @@ function algemeneVragen() {
   faculteitInput = createSelect().style('font-size', fontsize);
   faculteitInput.position(3*inbetween, camY + buttonSize/2+ 7.5 * inbetween + 7*teksthoogte);
   faculteitInput.option('kies een optie');
-  faculteitInput.size(camW);
+  faculteitInput.size(camW*2/3);
+  
+  faculteitAndere=createInput("").position(4*inbetween+camW*2/3,camY + buttonSize/2+ 7.5 * inbetween + 7*teksthoogte).size(camW/3);
 
 }
 
 function faculteitkeuze() {
+  
+    if(universiteitInput.value()=="Andere:"){
+    console.log('done');
+    universiteitAndere.show();
+  }
 
   faculteitInput.remove();
 
   faculteitInput = createSelect().style('font-size', fontsize);
   faculteitInput.position(3*inbetween, camY + buttonSize/2+ 7.5 * inbetween + 7*teksthoogte);
   faculteitInput.option('kies een optie');
-  faculteitInput.size(camW);
+  faculteitInput.size(camW*2/3);
 
   if (universiteitInput.value() == 'KU Leuven') {
     
@@ -243,6 +253,8 @@ function faculteitkeuze() {
     faculteitInput.option('Music');
     faculteitInput.option('Social Work');
   }
+  faculteitInput.option('Andere:');
+  faculteitInput.changed(faculteitsAndere);
 }
 
 function hideFaculteit() {
@@ -252,4 +264,10 @@ function hideFaculteit() {
 function showFaculteit() {
   faculteitInput.show();
   universiteitInput.show();
+}
+
+function faculteitsAndere(){
+  if(faculteitInput.value()=="Andere:"){
+    faculteitAndere.show();
+  }
 }

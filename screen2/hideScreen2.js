@@ -18,6 +18,9 @@ function hideScreen2(){
   leeftijdInput.hide();
   universiteit.hide();
   faculteit.hide();
+  
+  faculteitAndere.hide();
+  universiteitAndere.hide();
 }
 
 function showScreen2(){
