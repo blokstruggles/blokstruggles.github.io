@@ -58,30 +58,30 @@ function tekstvakScreen3(){
   
   screen3Tevredenheid=createElement('text','Studeer je hier slechter of net beter dan voor de coronaperiode?').size(W-2*inbetween, buttonSize).position(inbetween,camY+camH+4*inbetween+(inbetween/2)+4*teksthoogte+buttonSize*(2/3)).style('font-size', fontsize);
   
-  screen3veelmeer=createImg('images/smileyExcited.png','JA');
-  screen3veelmeer.size(buttonSize*2/3,buttonSize*2/3);
+  screen3veelmeer=createImg('images/Veelmeer.png','JA');
+  screen3veelmeer.size(buttonSize*4/3,buttonSize*2/3);
   screen3veelmeer.position(3*buttonSize*2/3+buttonSize*4/3+5*inbetweenBreedte,camY+camH+4.8*inbetween+(inbetween/2)+6*teksthoogte+buttonSize*(2/3));
   screen3veelmeer.mousePressed(veelmeer3);
   
-  screen3meer=createImg('images/smileyHappy.png','JA');
+  screen3meer=createImg('images/meer.png','JA');
   screen3meer.size(buttonSize*2/3,buttonSize*2/3);
   screen3meer.position(2*buttonSize*2/3+buttonSize*4/3+4*inbetweenBreedte,camY+camH+4.8*inbetween+(inbetween/2)+6*teksthoogte+buttonSize*(2/3));
   screen3meer.mousePressed(meer3);
   
 
-  screen3hetzelfde=createImg('images/SmileyNeutraal.png','JA');
+  screen3hetzelfde=createImg('images/hetzelfde.png','JA');
   screen3hetzelfde.size(buttonSize*2/3,buttonSize*2/3);
   screen3hetzelfde.position(buttonSize*2/3+buttonSize*4/3+3*inbetweenBreedte,camY+camH+4.8*inbetween+(inbetween/2)+6*teksthoogte+buttonSize*(2/3));
   screen3hetzelfde.mousePressed(hetzelfde3);
   
-  screen3minder=createImg('images/smileySad.png','JA');
+  screen3minder=createImg('images/minder.png','JA');
   screen3minder.size(buttonSize*2/3,buttonSize*2/3);
   screen3minder.position(buttonSize*4/3+2*inbetweenBreedte,camY+camH+4.8*inbetween+(inbetween/2)+6*teksthoogte+buttonSize*(2/3));
   screen3minder.mousePressed(minder3);
   
-  screen3veelminder=createImg('images/smileyAngry.png','JA');
-  screen3veelminder.size(buttonSize*2/3,buttonSize*2/3);
-  screen3veelminder.position(inbetweenBreedte+buttonSize*2/3,camY+camH+4.8*inbetween+(inbetween/2)+6*teksthoogte+buttonSize*(2/3));
+  screen3veelminder=createImg('images/Veelminder.png','JA');
+  screen3veelminder.size(buttonSize*4/3,buttonSize*2/3);
+  screen3veelminder.position(inbetweenBreedte,camY+camH+4.8*inbetween+(inbetween/2)+6*teksthoogte+buttonSize*(2/3));
   screen3veelminder.mousePressed(veelminder3);
   
   screen3TevredenheidAntwoord=createElement('text','Kan je vertellen waarom dat zo is?').size(W-2*inbetween, buttonSize).position(inbetween,camY+camH+6*inbetween+(inbetween/2)+6*teksthoogte+2*buttonSize*(2/3)).style('font-size', fontsize);
@@ -169,7 +169,7 @@ function tekenAntwoord3(){
     fill(color(205, 169, 186));
     stroke(0,0,0);
      strokeWeight(2);
-     circle(antwoord3X+antwoord3W/2, antwoord3Y+antwoord3W/2, antwoord3W+inbetween);
+     ellipse(antwoord3X+antwoord3W/2, antwoord3Y+antwoord3H/2, antwoord3W+inbetween,antwoord3H+inbetween);
   }  
 }
 
