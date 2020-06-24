@@ -24,7 +24,7 @@ function tekstvakScreen7(){
   
   screen7Antwoord=createSelect().position(W/2,camY+camH+inbetween).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
   screen7Antwoord.option('kies een optie');
- screen7Antwoord.option('De straat');
+  screen7Antwoord.option('De straat');
   screen7Antwoord.option('Andere mensen buiten');
   screen7Antwoord.option('Andere mensen thuis');
   screen7Antwoord.option('Grasmaaiers');

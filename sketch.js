@@ -33,14 +33,14 @@ function setup() {
   
   //configuratie firebase
   var firebaseConfig = {
-    apiKey: "AIzaSyBW9WCsKKn-9fVMYQkC0Rt27HKu0RLnvso",
-    authDomain: "blokstruggles.firebaseapp.com",
-    databaseURL: "https://blokstruggles.firebaseio.com",
-    projectId: "blokstruggles",
-    storageBucket: "blokstruggles.appspot.com",
-    messagingSenderId: "355830274814",
-    appId: "1:355830274814:web:eeef9f1fb53c24e13ae3af",
-    measurementId: "G-D0JPRQM09N"
+    apiKey: "AIzaSyB1mEoSK1mA2Pm6srbodGdqPFuxKAddNmI",
+    authDomain: "blokstruggles-official.firebaseapp.com",
+    databaseURL: "https://blokstruggles-official.firebaseio.com",
+    projectId: "blokstruggles-official",
+    storageBucket: "blokstruggles-official.appspot.com",
+    messagingSenderId: "232198545182",
+    appId: "1:232198545182:web:daac479e28b990b23cb30f",
+    measurementId: "G-H3YWCC8G16"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
