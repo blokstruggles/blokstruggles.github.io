@@ -54,6 +54,11 @@ function draw() {
   // Bij het openen van de app willen we nakijken of de camera al geladen is voordat we verdergaan
   if (screen == 0) {
     cam.loadPixels(); 
+    text("De app werkt enkel op een smartphone en heeft toestemming tot het gebruik van je camera nodig.",W/20,W/20,W-2*W/20,H);
+    
+    text("De app werkt enkel op een smartphone en heeft toestemming tot het gebruik van je camera nodig.",W/20,H/3+W/20,W-2*W/20,H);
+    
+    text("De app werkt enkel op een smartphone en heeft toestemming tot het gebruik van je camera nodig.",W/20,H*2/3+W/20,W-2*W/20,H);
   }
   // zolang de camera niet geladen is, is het aantal pixels 0. Vanaf dat de camera voledig geïnitialiseerd is, gaat de applicatie verder.
   if (cam.pixels[1] > 0 && screen == 0) {
@@ -80,7 +85,7 @@ function draw() {
     tekenAntwoord2b();
     noStroke();
     fill(color(0,0,0));
-    text("Waarom je wel of niet tevreden bent met de ruimte kan je uitleggen aan de hand van 5 thema's tijdens de volgende stappen. De studieplek in het algemeen, de privacy, de afleiding door het uitzicht, het licht en het storende geluid. Je bent niet verplicht om een foto te nemen en kan een thema overslaan door op de knop 'volgende' te drukken.",inbetween,camY + buttonSize / 2 + 12 * inbetween + 9* teksthoogte + 2*buttonSize * 2 / 3 + buttonSize,W-2*inbetween,H);
+    text("Waarom je wel of niet tevreden bent met de ruimte kan je uitleggen aan de hand van 5 thema's tijdens de volgende stappen. De studieplek in het algemeen, de privacy, de afleiding door het uitzicht, het licht en het storende geluid. Je kan een thema overslaan door op de knop 'volgende' te drukken.",inbetween,camY + buttonSize / 2 + 12 * inbetween + 9* teksthoogte + 2*buttonSize * 2 / 3 + buttonSize,W-2*inbetween,H);
   }
   
   if(screen==4){

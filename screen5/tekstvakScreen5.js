@@ -20,9 +20,9 @@ function tekstvakScreen5(){
   
   screen5=createElement('text','Neem een foto van iets wat je afleidt of iets dat je doet om minder afgeleid te worden.').size(camW, buttonSize).position(camX,2*inbetween+buttonSize).style('font-size', fontsize);
     
-  screen5Vraag=createElement('text',"Wat leidt je het meeste af?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+inbetween).style('font-size', fontsize);
+  screen5Vraag=createElement('text',"Wat leidt je het meeste af?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).style('font-size', fontsize);
   
-  screen5Antwoord=createSelect().position(W/2,camY+camH+inbetween).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
+  screen5Antwoord=createSelect().position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
   screen5Antwoord.option('kies een optie');
   screen5Antwoord.option('Naar buiten kijken');
   screen5Antwoord.option('Rondom mij kijken');
@@ -33,14 +33,14 @@ function tekstvakScreen5(){
   screen5Antwoord.option('Andere:');
   screen5Antwoord.changed(andere5);
   
-  screen5AntwoordAndere=createInput("").position(W/2,camY+camH+inbetween+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
+  screen5AntwoordAndere=createInput("").position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
   
-  screen5XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween, camY+camH+2*inbetween+(inbetween/2)+2*teksthoogte).style('font-size', fontsize)
+  screen5XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween,camY+camH+inbetween).style('font-size', fontsize)
   
   screen5VX=W/2;
-  screen5VY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen5VY=camY+camH+1.3*inbetween+2*teksthoogte;
   screen5XX=W/2+buttonSize*2/3+3*inbetween;
-  screen5XY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen5XY=camY+camH+1.3*inbetween+2*teksthoogte;
   
   screen5V=createImg('images/goed.png','goed');
   screen5V.size(buttonSize*2/3,buttonSize*2/3);

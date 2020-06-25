@@ -21,9 +21,9 @@ function tekstvakScreen4(){
   
   screen4=createElement('text','Neem een foto van de reden waarom je meer of minder gestoord wordt door andere mensen. Dit kan ook gaan over samen studeren omdat je sociale controle nodig hebt. \r\nLET OP! Breng hierbij geen andere mensen herkenbaar in beeld').size(camW, buttonSize).position(camX,2*inbetween+buttonSize).style('font-size', fontsize);
     
-  screen4Vraag=createElement('text',"Studeer je met anderen?").size(W/2-2*inbetween, buttonSize/3).position(inbetween,camY+camH+inbetween).style('font-size', fontsize);
+  screen4Vraag=createElement('text',"Studeer je met anderen?").size(W/2-2*inbetween, buttonSize/3).position(inbetween,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).style('font-size', fontsize);
   
-  screen4Antwoord=createSelect().position(W/2,camY+camH+inbetween).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
+  screen4Antwoord=createSelect().position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
   screen4Antwoord.option('kies een optie');
   screen4Antwoord.option('Ik studeer alleen');
   screen4Antwoord.option('Ik studeer met samenwonenden');
@@ -32,14 +32,14 @@ function tekstvakScreen4(){
   screen4Antwoord.option('Andere:');
   screen4Antwoord.changed(andere4);
   
-  screen4AntwoordAndere=createInput("").position(W/2,camY+camH+inbetween+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
+  screen4AntwoordAndere=createInput("").position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
   
-  screen4XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween, camY+camH+2*inbetween+(inbetween/2)+2*teksthoogte).style('font-size', fontsize)
+  screen4XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween,camY+camH+inbetween).style('font-size', fontsize)
   
   screen4VX=W/2;
-  screen4VY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen4VY=camY+camH+1.3*inbetween+2*teksthoogte;
   screen4XX=W/2+buttonSize*2/3+3*inbetween;
-  screen4XY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen4XY=camY+camH+1.3*inbetween+2*teksthoogte;
   
   screen4V=createImg('images/goed.png','goed');
   screen4V.size(buttonSize*2/3,buttonSize*2/3);

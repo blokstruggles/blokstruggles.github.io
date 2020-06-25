@@ -20,9 +20,9 @@ function tekstvakScreen7(){
   
   screen7=createElement('text','Neem een foto van een geluidsbron die je het meeste stoort of van de plek waar de geluidsbron voorkomt.').size(camW, buttonSize).position(camX,2*inbetween+buttonSize).style('font-size', fontsize);
     
-  screen7Vraag=createElement('text',"In welke ruimte zit je?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+inbetween).style('font-size', fontsize);
+  screen7Vraag=createElement('text',"In welke ruimte zit je?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).style('font-size', fontsize);
   
-  screen7Antwoord=createSelect().position(W/2,camY+camH+inbetween).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
+  screen7Antwoord=createSelect().position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
   screen7Antwoord.option('kies een optie');
   screen7Antwoord.option('De straat');
   screen7Antwoord.option('Andere mensen buiten');
@@ -31,14 +31,14 @@ function tekstvakScreen7(){
   screen7Antwoord.option('Andere:');
   screen7Antwoord.changed(andere7);
   
-  screen7AntwoordAndere=createInput("").position(W/2,camY+camH+inbetween+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
+  screen7AntwoordAndere=createInput("").position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
   
-  screen7XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween, camY+camH+2*inbetween+(inbetween/2)+2*teksthoogte).style('font-size', fontsize)
+  screen7XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween,camY+camH+inbetween).style('font-size', fontsize)
   
   screen7VX=W/2;
-  screen7VY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen7VY=camY+camH+1.3*inbetween+2*teksthoogte;
   screen7XX=W/2+buttonSize*2/3+3*inbetween;
-  screen7XY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen7XY=camY+camH+1.3*inbetween+2*teksthoogte;
   
   screen7V=createImg('images/goed.png','goed');
   screen7V.size(buttonSize*2/3,buttonSize*2/3);

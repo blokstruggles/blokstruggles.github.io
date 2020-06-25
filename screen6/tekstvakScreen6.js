@@ -20,9 +20,9 @@ function tekstvakScreen6(){
   
   screen6=createElement('text','Neem een foto van de belangrijkste lichtbron op je studeerplek, of net het gebrek aan goed licht.').size(camW, buttonSize).position(camX,2*inbetween+buttonSize).style('font-size', fontsize);
     
-  screen6Vraag=createElement('text',"Welke lichtbron is het belangrijkste?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+inbetween).style('font-size', fontsize);
+  screen6Vraag=createElement('text',"Welke lichtbron is het belangrijkste?").size(camW-buttonSize*4/3-2*inbetween, buttonSize/3).position(inbetween,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).style('font-size', fontsize);
   
-  screen6Antwoord=createSelect().position(W/2,camY+camH+inbetween).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
+  screen6Antwoord=createSelect().position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3).size(W/2-inbetween,teksthoogte).style('font-size', fontsizeSelect);
   screen6Antwoord.option('kies een optie');
   screen6Antwoord.option('daglicht door een raam');
   screen6Antwoord.option('bureaulamp');
@@ -30,14 +30,14 @@ function tekstvakScreen6(){
   screen6Antwoord.option('Andere:');
   screen6Antwoord.changed(andere6);
   
-  screen6AntwoordAndere=createInput("").position(W/2,camY+camH+inbetween+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
+  screen6AntwoordAndere=createInput("").position(W/2,camY+camH+3*inbetween+2*teksthoogte+buttonSize*2/3+inbetween/2+teksthoogte).size(W/2-inbetween,teksthoogte).style('font-size', fontsize).style('background-color', color(255, 255, 255, 100));
   
-  screen6XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween, camY+camH+2*inbetween+(inbetween/2)+2*teksthoogte).style('font-size', fontsize)
+  screen6XV=createElement('text','Je kan deze stickers op de foto slepen om iets positief en/of negatief aan te duiden.').size(W-2*inbetween, buttonSize).position(inbetween,camY+camH+inbetween).style('font-size', fontsize)
   
 screen6VX=W/2;
-  screen6VY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen6VY=camY+camH+1.3*inbetween+2*teksthoogte;
   screen6XX=W/2+buttonSize*2/3+3*inbetween;
-  screen6XY=camY+camH+2.3*inbetween+(inbetween/2)+4*teksthoogte;
+  screen6XY=camY+camH+1.3*inbetween+2*teksthoogte;
   
   screen6V=createImg('images/goed.png','goed');
   screen6V.size(buttonSize*2/3,buttonSize*2/3);
