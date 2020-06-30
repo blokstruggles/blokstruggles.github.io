@@ -79,10 +79,10 @@ function saveDrawing() {
   }
 
   if (screen == 3) {
-    studeerplekInfo[0]=vorigeplekInput.value();
+    studeerplekInfo[0]=vorigeplekInput.value()+andereplekInput.value();
     studeerplekInfo[1]=tevredenheidVooraf;
     studeerplekInfo[2]=vorigeplekWaaromInput.value();
-    studeerplekInfo[3]=coronaplekInput.value();
+    studeerplekInfo[3]=coronaplekInput.value()+coronaandereplekInput.value();
     studeerplekInfo[4]=tevredenheidAchteraf;
     
     data = {
